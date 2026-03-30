@@ -1,0 +1,161 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor-main: black;
+    --botao-fundo: white;
+    --sombra: grey;
+    --back: white;
+    --fundo-burger: rgb(25, 32, 68); 
+}
+
+.cor{
+    z-index: 10;
+    
+}
+
+.cor:hover{
+    cursor: pointer;
+}
+
+#tema {
+       position: absolute;
+       opacity: 0;
+       width: 0;
+       height: 0;
+    }
+
+#tema:checked ~ * {
+      --cor-main: white;
+      --botao-fundo: rgb(0, 0, 0);
+      --sombra: rgb(232, 232, 232);
+      --back: black;
+    }
+
+body {
+    border: 0px;
+    height: 0vh;
+}
+
+header {
+    height: 60px;
+    color: white;
+    background-color: rgb(25, 32, 68);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#burger {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    color: var(--cor-main);
+    background-color: var(--back);
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.card {
+    width: 175px;
+    height: 50px;
+    background-color: var(--botao-fundo);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px var(--sombra);
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bemvindo {
+    display: flex;
+    justify-content: center;
+}
+
+#textointro {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    height: 60px;
+    color: white;
+    background-color: rgb(25, 32, 68);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    justify-content: center;
+}
+
+.itens {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 45px;
+}
+
+.hamburger {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 200px;
+    height: 100%;
+    background: var(--fundo-burger);
+
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-top: 1rem;
+    gap: 1rem;
+    transition: left 0.3s ease;
+    padding-top: 80px;
+    text-decoration: none;
+}
+
+#menu-toggle:checked ~ .menu {
+    left: 0;
+}
+
+#inicio:hover, #sobre:hover, #projetos:hover, #contato:hover, #tema:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 20px;
+    transform: scale(1.05);
+}
+
+.botoes:hover, .card:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: 0.5s;
+}
