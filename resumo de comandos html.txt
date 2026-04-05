@@ -1,0 +1,62 @@
+# <h1>Título</h1> : usado para adicionar títulos
+
+# <h2>Sub Titulo</h2> : usado para sub títulos.
+
+# <h3> - <h4> - <h5> - <h6> : variações do tamanho da fonte.
+
+# <head>metadados</head> : informações que não ficam visíveis na página, contem metadados (tags, link pro estilo css etc/ ! e enter para autofill com informações basicas)
+
+# <body></body> : parte visível da página.
+
+# <header>cabeçalho</header> 
+
+# <main>parte principal da página</main>
+
+# <footer>rodapé</footer>
+
+# <div>agrupa elementos</div>
+
+# <p>parágrafo</p>
+
+# <section>seções da página</section>
+
+# <strong>negrito</strong> : coloca em negrito direto no <HTML>
+
+# <b>negrito</b>
+
+# <em>itálico</em> ou <i>itálico</i>
+
+# <br> pula linha
+
+# <!--comentário--> : usado para adicionar comentários. (no css é /*comentario*/)
+
+# <form>criar formulário</form> 
+
+# <img src="diretorio da img" alt="descrição"/> : adicionar imagem 
+
+# <ul>cria lista</ul> :  com pontinhos nao ordenada
+
+# <ol>criar listas</ol> : ordenada
+
+# <li>cada item da lista</li>
+
+# <dl></dl> lista de definições
+#        <dt>elemento</dt>
+#        <dd>definição</dd> (equivalentes ao <li>)
+
+# &copy : para colocar o "c" de direitos reservados
+
+# <a href ="link a ser encaminhado" target="_blank" (para abri o link em outra pagina) >texto ou img</a> para links
+
+# <button>para criar botões</button>
+
+# <button type="button">Clique Aqui!</button> : para botão clicavel
+
+# <label for=""></label> : para adicionar legenda
+
+# <label for="nome-usuario">Nome:</label>
+#  <input type="text" id="nome-usuario" name="usuario"> : nesse exemplo para adicionar a escrita "nome" e um botão de texto.
+
+#  <link rel="stylesheet" href="style.css"> : para ligar o arquivo CSS ao arquivo HTML.
+
+# classe="nome_classe" : para fazer dessa classe um seletor, adiciona dentro da tag.
