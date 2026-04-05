@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box; /*conta o padding e a border no tamanho da box*/
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*header*/
+
+header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(173, 113, 24);
+}
+
+#titulo {
+    padding-left: 10px;
+    color: white;
+}
+
+#icon {
+    height: 50px;
+    width: 50px;
+}
+
+/*main*/
+
+.cartoes {
+    height: 330px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin: 60px;
+}
+
+.cartoes img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.cartoes h1{
+    display: flex;
+    justify-content: center;
+}
+
+.cartao {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sobre {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(253, 239, 209);
+}
+
+.sobre p, h1{
+    padding: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;    
+}
