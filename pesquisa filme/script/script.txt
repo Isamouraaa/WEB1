@@ -1,0 +1,32 @@
+async function buscarFilmes(nome) {
+    try {
+        let link = 'https://api.tvmaze.com/search/shows?q=' + nome;
+        const resposta = await fetch(link);
+        const dados = await resposta.json();
+        console.log(dados);
+    } catch (erro) {
+        console.error("Erro ao buscar dados:", erro);
+        resultado.textContent = "Não foi possível buscar os dados.";
+    }
+}
+
+const form = document.querySelector("#pesquisa");
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    const nome = document.querySelector("#nome").value.trim();
+
+    if (nome === "") {
+        resultado.textContent = "Digite um nome para buscar.";
+        return;
+    }
+});
+
+buscarFilmes(document.querySelector("#nome"))
+
+const resultado = document.querySelector("#resultado");
+resultado.innerHTML = "";
+
+const card = document.createElement("div");
+card.textContent = "Usuário encontrado";
+
+resultado.appendChild(card);
