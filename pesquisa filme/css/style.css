@@ -1,0 +1,15 @@
+body {
+    background-color: #141414;
+    color: #ffffff;
+}
+
+.card-img-top {
+    height: 320px;
+    object-fit: cover;
+    background-color: #333;
+}
+.card-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
